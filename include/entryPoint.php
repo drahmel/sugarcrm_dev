@@ -152,6 +152,9 @@ require_once('include/modules.php'); // provides $moduleList, $beanList, $beanFi
 
 require('include/utils/autoloader.php');
 spl_autoload_register(array('SugarAutoLoader', 'autoload'));
+if (file_exists('include/composer/vendor/autoload.php')) {
+    require_once('include/composer/vendor/autoload.php');
+}
 require_once('data/SugarBean.php');
 require_once('include/utils/mvc_utils.php');
 require('include/SugarObjects/LanguageManager.php');

@@ -1,0 +1,12 @@
+{
+  "config": {
+    "vendor-dir": "include/vendors"
+  },
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Sugarcrm\\": "include/sugarcrm"
+    }
+  }
+}
